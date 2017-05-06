@@ -12,16 +12,13 @@ package clase2;
 public class Clase2 {
     
 
-/*public class estudiante extends Persona {
-   
-    public Estudiante (String nombre, String apellido, int edad)
-    {
-    super(nombre,apellido,edad);
-    }
-    }
-    psvm    
-    
-    
-    
-    */    
+public static void main (String [ ] args) {
+ 
+Persona cuidador = new Persona();
+
+        
+        
+     
+        
+        }   
 }

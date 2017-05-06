@@ -19,5 +19,16 @@ public void abrir()
 { 
 this.open = true;
         }
+
+public void cerrar(){
+this.open = false;
+
+}
+public int alimentar(int cRaciones){
+
+    cRaciones = raciones_por_animal;
+    
+    return cRaciones;
 }
 
+}
