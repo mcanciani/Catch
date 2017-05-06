@@ -13,7 +13,7 @@ package clase2;
 
 import java.util.Date;
 
-public class Persona {
+public abstract class Persona {
     
 private String Nombre;
 private java.util.Date nac;

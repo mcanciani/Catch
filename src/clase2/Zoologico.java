@@ -9,9 +9,9 @@ package clase2;
  *
  * @author educacionit
  */
-public class Zoologico {
-final int cantidad_animales = 25; 
-final int raciones_por_animal = 5;
+public class Zoologico{
+public final int cantidad_animales = 25; 
+public final int raciones_por_animal = 5;
 boolean open;
 
 
