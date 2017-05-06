@@ -3,15 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package clase2;
-
+package clase2; 
 /**
  *
  * @author educacionit
  */
 public class Zoologico{
-public final int cantidad_animales = 25; 
-public final int raciones_por_animal = 5;
+public static final int CANTIDAD_ANIMALES = 25; 
+public static final int RACIONES_POR_ANIMAL = 5; //con static pasa a ser de clase y no de instancia
 boolean open;
 
 
@@ -24,11 +23,11 @@ public void cerrar(){
 this.open = false;
 
 }
-public int alimentar(int cRaciones){
-
-    cRaciones = raciones_por_animal;
+public void alimentarAnimales(int unaCantidadDeRaciones){
     
-    return cRaciones;
+    Cuidador p1 = new Cuidador(unaCantidadDeRaciones);
+    p1.alimentarAnimales();
+    
 }
 
 }

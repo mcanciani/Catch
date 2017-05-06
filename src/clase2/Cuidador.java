@@ -12,14 +12,18 @@ package clase2; //forma de organizar mis clases
 public class Cuidador extends Persona {
     private int cantidadDeRaciones;
 
+    public Cuidador(int cantidadDeRaciones) {
+        this.cantidadDeRaciones = cantidadDeRaciones;
+    }
+
     public void setCantidadDeRaciones(int cantidadDeRaciones) {
         this.cantidadDeRaciones = cantidadDeRaciones;
     
     }
-     public int alimentarAnimales(int raciones)
+    
+     public void alimentarAnimales()
      {
-        raciones = this.cantidadDeRaciones++;
-        if (raciones==255)
+        if (cantidadDeRaciones==Zoologico.CANTIDAD_ANIMALES*Zoologico.RACIONES_POR_ANIMAL)
            {
            System.out.print("suficiente");
            }
@@ -27,6 +31,5 @@ public class Cuidador extends Persona {
            {    
                System.out.print("No alcanza"); 
            }
-        return raciones;
      }
 }
