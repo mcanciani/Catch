@@ -5,6 +5,8 @@
  */
 package claseerrores;
 
+import java.io.IOException;
+
 /**
  *
  * @author educacionit
@@ -19,6 +21,14 @@ public class ClaseErrores {
     p.empujar(555555);
     p.empujar(33);
     p.mostrar();
+try{
+}
+catch(IOException e){
+
+}
+finally{
+//util con recursos, para cerrarlos...
+}
     }
 
                         
