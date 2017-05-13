@@ -24,19 +24,18 @@ public class Pila<t>{//<> mantinene todos los elementos dle mismo tipo que yo el
     }
 
     
-    public void empujar(t e) {
+    public void empujar(t e) throws PilaException {
         
         if ((max - 1) == tope) {
-            System.out.print("error pila llena");
+            throw new PilaException("sdf");
         } else {
             elementos[++tope] = e;
         }
     }
     
-    public t sacar(){
+    public t sacar() throws PilaVaciaException{
         if (tope < 0){
-        System.out.print("error pila vacía");
-        return null;
+            throw new PilaVaciaException("sdf");
         }
         else{
         t e = elementos[tope];
@@ -55,4 +54,6 @@ public class Pila<t>{//<> mantinene todos los elementos dle mismo tipo que yo el
             System.out.println(elementos[i]);
         }
     }
+    
+     
 }
