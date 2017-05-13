@@ -16,15 +16,9 @@ public class ClaseErrores {
      */
     public static void main(String[] args) {
                  Pila<Integer> p = new Pila(5); //datos primitivos NO, sólo clases.
-                                        //int> Integer.
-           
-        p.empujar(1);
-        p.empujar(1433);
-        
-        p.empujar(2414);
-        
-        p.empujar(1333);
-        p.mostrar();   // TODO code application logic here
+    p.empujar(555555);
+    p.empujar(33);
+    p.mostrar();
     }
 
                         
